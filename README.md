@@ -116,7 +116,7 @@ No read occurs if the client NACKs communication. Boolean functions return false
 | bool MSSP_RegisterSelectAndRead(uint8_t deviceADDR, uint8_t registerADDR, uint8_t* blockMem, uint8_t memSize) | Addresses a client device at `deviceADDR`, writes 1 byte of data (`registerADDR`), RESTARTs the bus, readdresses the client device, and reads `memSize` bytes back. Returns true if successful or false if the client NACKed.
 | bool MSSP_WriteByte(uint8_t deviceADDR, uint8_t data) | Addresses a client device at `deviceADDR` and writes 1 byte (`data`) to the client. Returns true if successful or false if the client NACKed.
 | bool MSSP_ReadByte(uint8_t deviceADDR, uint8_t* data) | Addresses a client device at `deviceADDR` and reads a single byte of data from this device into `data`. Returns true if successful or false if the client NACKed.
-| uint8_t MSSP_ReadByteNoWarn(uint8_t deviceAddr) | Addresses a client device at `deviceADDR` and returns a single byte of data read from the device. If the client NACKed, the byte returned will be 0x00.
+| uint8_t MSSP_ReadByteNoWarn(uint8_t deviceADDR) | Addresses a client device at `deviceADDR` and returns a single byte of data read from the device. If the client NACKed, the byte returned will be 0x00.
 | bool MSSP_WriteBlock(uint8_t deviceADDR, uint8_t* blockMem, uint8_t memSize) | Addresses a client device at `deviceADDR` and writes `memSize` bytes of data from `blockMem` to it. Returns true if successful or false if the client NACKed.
 | bool MSSP_ReadBlock(uint8_t deviceADDR, uint8_t* blockMem, uint8_t memSize) | Addresses a client device at `deviceADDR` and reads `memSize` bytes from the client into `blockMem`. Returns true if successful or false if the client NACKed.
 
