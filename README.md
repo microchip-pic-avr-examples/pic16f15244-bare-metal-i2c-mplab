@@ -150,7 +150,7 @@ To write a function that can be called for these events, they must have the foll
 
 Like all interrupt handlers, the functions associated should be as small as possible and ***non-blocking***.
 
-**Note: For Read Events, n + 1 events will occur, due to the host ACKing the communication before the STOP event. The block mode driver corrects it's index for this event.**
+*Note: For Read Events, n + 1 events will occur, due to the host ACKing the communication before the STOP event. The block mode driver corrects it's index for this event.*
 
 #### API Functions (mssp1_client.h)
 
