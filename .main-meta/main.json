@@ -4,10 +4,10 @@
     "content": {
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.mplabx.project.pic16f15244-bare-metal-i2c",
-        "version": " ",
-        "displayName": "",
+        "version": "1.0.0",
+        "displayName": "Bare Metal I2C Drivers for the PIC16F15244 Family of MCUs",
         "projectName": "pic16f15244-bare-metal-i2c",
-        "shortDescription": "In this example bare metal drivers for the MSSP peripheral in the PIC16F15244 will be created",
+        "shortDescription": "In this example, bare metal drivers for the MSSP peripheral in the PIC16F15244 will be created.",
         "ide": {
             "name": "MPLAB X",
             "semverRange": ">=5.50.0"
@@ -19,12 +19,8 @@
             }
         ],
         "dfp": {
-            "name": "",
-            "semverRange": ""
-        },
-        "configurator": {
-            "name": "",
-            "semverRange": ""
+            "name": "PIC16F1xxxx_DFP",
+            "semverRange": "^1.8.149"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -36,10 +32,20 @@
                 "versionRange": "*"
             }
         },
-        "author": "Robert Perkel",
-        "subcategories": [],
-        "peripherals": [],
-        "keywords": [],
+        "author": "Microchip",
+        "subcategories": [
+            [
+              "Peripherals",
+              "MSSP"
+            ]
+        ],
+        "peripherals": [
+          "MSSP"
+        ],
+        "keywords": [
+          "Bare Metal",
+          "I2C"
+        ],
         "additionalData": {
             "longDescription": {
                 "metaDataVersion": "1.0.0",

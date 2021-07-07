@@ -75,7 +75,6 @@ void MSSP_ClientInit(uint8_t address)
     SSP1CON3 = 0x00;
     SSP1STAT = 0x00;
         
-    
     //Disable slew control for Standard mode
     SSP1STATbits.SMP = 1;
     

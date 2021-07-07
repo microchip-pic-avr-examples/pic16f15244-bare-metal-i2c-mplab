@@ -275,12 +275,12 @@ bool MSSP_ReadByte(uint8_t deviceADDR, uint8_t* data)
     return true;
 }
 
-uint8_t MSSP_ReadByteNoWarn(uint8_t deviceAddr)
+uint8_t MSSP_ReadByteNoWarn(uint8_t deviceADDR)
 {
     uint8_t readByte = 0x00;
     
     //Call the read byte function
-    MSSP_ReadByte(deviceAddr, &readByte);
+    MSSP_ReadByte(deviceADDR, &readByte);
     
     //Return the result
     return readByte;

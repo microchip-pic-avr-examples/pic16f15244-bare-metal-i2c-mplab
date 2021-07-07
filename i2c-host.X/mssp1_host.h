@@ -95,7 +95,7 @@ Copyright (c) [2012-2020] Microchip Technology Inc.
      * This function selects the client device and reads a single byte of data from it.
      * Returns 0x00 (on a failure) or the byte of data received. 
      */
-    uint8_t MSSP_ReadByteNoWarn(uint8_t deviceAddr);
+    uint8_t MSSP_ReadByteNoWarn(uint8_t deviceADDR);
 
     /**
      * <b><FONT COLOR=BLUE>bool</FONT> MSSP_WriteBlock(<FONT COLOR=BLUE>uint8_t</FONT> deviceADDR, <FONT COLOR=BLUE>uint8_t*</FONT> blockMem, <FONT COLOR=BLUE>uint8_t</FONT> memSize)</B>
