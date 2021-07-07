@@ -158,7 +158,7 @@ Like all interrupt handlers, the functions associated should be as small as poss
 | ------------------- | --------
 | void initI2CPins(void) | Initializes the I<sup>2</sup>C pins for the MSSP. Uses RB4 and RB6.
 | void MSSP_ClientInit(uint8_t address) | Initializes the driver in I<sup>2</sup>C client mode.
-| void _MSSP_ProcessInterrupt(void) | This function is called from the ISR function to process MSSP interrupts.
+| void _MSSP_ProcessInterrupt(void) | This function is called from the ISR function to process MSSP interrupts. **Do not call this function.**
 | void assignMSSPByteWriteHandler(void (*writeHandler)(uint8_t)) | This sets the function that is called for I<sup>2</sup>C write events.
 | void assignMSSPByteReadHandler(uint8_t (*readHandler)(void)) | This sets the function that is called for I<sup>2</sup>C read events.
 | void assignMSSPStopHandler(void (*stopHandler)(void)) | This sets the function that is called for I<sup>2</sup>C stop events.
@@ -223,8 +223,8 @@ In this configuration, memory writes will occur from the 4th byte to the 7th byt
 | void _MSSP_StoreByte(uint8_t data) | Called by the byte mode driver to handle bytes received. **Do not call this function.**
 | uint8_t _MSSP_RequestByte(void) | Called by the byte mode driver to get the next byte to send. **Do not call this function.**
 | void _onMSSPStop(void) | Called by the byte mode driver on an I<sup>2</sup>C stop to adjust or reset the memory indexes. **Do not call this function.**
-| void setupReadBuffer(volatile uint8_t* buffer, uint8_t size) | This function sets the read buffer to **SEND data from the client to the host**.
-| void setupWriteBuffer(volatile uint8_t* buffer, uint8_t size) | This function sets the write buffer to **RECEIVE data from the host**.
+| void setupReadBuffer(volatile uint8_t* buffer, uint8_t size) | This function sets the read buffer to **SEND** data from the client to the host.
+| void setupWriteBuffer(volatile uint8_t* buffer, uint8_t size) | This function sets the write buffer to **RECEIVE** data from the host.
 
 ## Summary
 
