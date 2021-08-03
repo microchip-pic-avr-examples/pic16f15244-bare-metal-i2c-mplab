@@ -30,13 +30,13 @@ Alternatively, these tools should also be compatible:
 
 ### Host Mode Testing
 
-To use the I<sup>2</sup>C host driver, an I<sup>2</sup>C client device is required. This can be created using another MCU in client mode, or by using a Click adapter board. A number of compatible Click boards are available from [mikroE](https://www.mikroe.com/click).
+To use the I<sup>2</sup>C host driver, an I<sup>2</sup>C client device is required. This can be created using another MCU in client mode, or by using a MikroElektronika (mikroE) Click adapter board. A number of compatible Click boards are available from [mikroE](https://www.mikroe.com/click).
 
 For testing, a PIC16F15245 running the [Advanced I/O Expander](https://github.com/microchip-pic-avr-examples/pic16f15244-family-advanced-i2c-io-expander) example was used to test host mode operation.
 
 ### Client Mode Testing
 
-To use the I<sup>2</sup>C client driver, a device capable of generated I<sup>2</sup>C host communication is required. This can be another MCU configured as a client, or this can be a stand-alone device, such as an [MCP2221A USB-I<sup>2</sup>C Breakout Module (ADM00559)](https://www.microchip.com/DevelopmentTools/ProductDetails/adm00559), which was used for testing.
+To use the I<sup>2</sup>C client driver, a device capable of generated I<sup>2</sup>C host communication is required. This can be another MCU configured as a client, or a stand-alone device, such as an [MCP2221A USB-I<sup>2</sup>C Breakout Module (ADM00559)](https://www.microchip.com/DevelopmentTools/ProductDetails/adm00559), which was used for testing.
 
 ## Pin Setup
 
@@ -76,7 +76,7 @@ The `MSSP_WriteByte` function sends the 7-bit address in `deviceADDR` to the cli
 
 Similiarly, the `MSSP_WriteBlock` function sends the 7-bit address in `deviceADDR` to the client. If the client ACKs this address, then `memSize` bytes are sent from `blockMem`.
 
-If the client does not ACK, then the function returns false and no data is sent.
+If the client does not ACK, then the function returns false (and no data is sent).
 
 ### Reading Data from Clients
 
@@ -93,7 +93,7 @@ bool MSSP_ReadBlock(uint8_t deviceADDR, uint8_t* blockMem, uint8_t memSize);
 
 `MSSP_RegisterSelectAndRead` is a special function in this driver. Unlike the other read functions, this one starts by starting an I<sup>2</sup>C write to the device at `deviceADDR`. Then, `registerADDR` is written to the device to select the address to read from. After writing that byte, the I<sup>2</sup>C bus is restarted, and the client is readdressed, but in read mode. `memSize` bytes of data are read from the device and stored in `blockMem`.
 
-If the client NACKs at either of the addressing steps in this function, the operation will be aborted, and the function will return false.
+If the client NACKs at either of the addressing steps in this function, the operation will be aborted (and the function will return false).
 
 #### Read Byte and Block
 
