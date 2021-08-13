@@ -6,7 +6,7 @@
         "name": "com.microchip.mcu8.mplabx.project.pic16f15244-bare-metal-i2c",
         "version": "1.0.0",
         "displayName": "Bare Metal I2C Drivers for the PIC16F15244 Family of MCUs",
-        "projectName": "pic16f15244-bare-metal-i2c",
+        "projectName": "pic16f15244-bare-metal-i2c-mplab",
         "shortDescription": "In this example, bare metal drivers for the MSSP peripheral in the PIC16F15244 will be created.",
         "ide": {
             "name": "MPLAB X",
