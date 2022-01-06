@@ -289,7 +289,7 @@ bool MSSP_WriteBlock(uint8_t deviceADDR, uint8_t* blockMem, uint8_t memSize)
     }
     
     bool success = true;
-    //Send the block of memroy to the client
+    //Send the block of memory to the client
     for (uint8_t I2CWrites = 0; I2CWrites < memSize; I2CWrites++)
     {
         //Send a byte of data
