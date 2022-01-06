@@ -10,17 +10,17 @@
         "shortDescription": "In this example, bare metal drivers for the MSSP peripheral in the PIC16F15244 will be created.",
         "ide": {
             "name": "MPLAB X",
-            "semverRange": ">=5.50.0"
+            "semverRange": ">=6.0.0"
         },
         "compiler": [
             {
                 "name": "XC8",
-                "semverRange": "^2.31.0"
+                "semverRange": "^2.35.0"
             }
         ],
         "dfp": {
             "name": "PIC16F1xxxx_DFP",
-            "semverRange": "^1.8.149"
+            "semverRange": "^1.9.136"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -33,12 +33,6 @@
             }
         },
         "author": "Microchip",
-        "subcategories": [
-            [
-              "Peripherals",
-              "MSSP"
-            ]
-        ],
         "peripherals": [
           "MSSP"
         ],

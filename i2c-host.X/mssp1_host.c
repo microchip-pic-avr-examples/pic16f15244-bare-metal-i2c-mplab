@@ -1,9 +1,3 @@
-/* 
- * File:   i2c.c
- * Author: C13066
- *
- * Created on September 4, 2015, 1:50 PM
- */
 /*
 Copyright (c) 2013 - 2014 released Microchip Technology Inc.  All rights reserved.
 

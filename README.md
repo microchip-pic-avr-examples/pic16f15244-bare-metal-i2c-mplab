@@ -8,9 +8,9 @@ In this example, bare metal I<sup>2</sup>C drivers for the MSSP peripheral on th
 
 ## Software Used
 
-- [MPLAB® X IDE v5.50.0 or newer](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-x-ide?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_MMTCha_pic152xx&utm_content=pic16f15244-bare-metal-i2c-mplab-github)
-  - [PIC16F1xxxx_DFP v1.8.149](https://packs.download.microchip.com/)
-- [MPLAB XC8 v2.31.0 or newer compiler](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-xc-compilers?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_MMTCha_pic152xx&utm_content=pic16f15244-bare-metal-i2c-mplab-github)
+- [MPLAB® X IDE v6.0.0 or newer](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_MMTCha_pic152xx&utm_content=pic16f15244-bare-metal-i2c-mplab-github)
+  - [PIC16F1xxxx_DFP v1.9.163](https://packs.download.microchip.com/)
+- [MPLAB XC8 v2.35 or newer compiler](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_MMTCha_pic152xx&utm_content=pic16f15244-bare-metal-i2c-mplab-github)
 
 ## Hardware Used
 
